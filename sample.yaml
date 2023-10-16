@@ -1,0 +1,11 @@
+sample:
+  name: Relay Sample
+tests:
+  sample.basic.relay:
+    tags:
+      - RELAY
+      - gpio
+    depends_on: gpio
+    harness: gpio
+    integration_platforms:
+      - longan_nano

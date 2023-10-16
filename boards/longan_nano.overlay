@@ -1,0 +1,15 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/ {
+    aliases {
+        relay0 = &power_relay0;
+    };
+    gpio_relay {
+        compatible = "gpio-keys";
+        power_relay0: power_relay_0 {
+            gpios = <&gpiob 8 GPIO_ACTIVE_LOW>;
+            label = "Relay 0";
+        };
+    };
+};
